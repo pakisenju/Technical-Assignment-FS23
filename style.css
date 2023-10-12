@@ -1,0 +1,62 @@
+.navbar {
+    background-color: rgba(20, 80, 163, 1.0) !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+
+.navbar-brand {
+    font-weight: 900 !important;
+}
+
+.btn-masuk {
+    background-color: #191D88 !important;
+    opacity: 1.0 !important;
+    color: #fff !important;
+}
+
+.btn-daftar {
+    color: #fff !important;
+}
+
+#hero {
+    background-color: #337CCF !important;
+}
+
+#hero #title {
+    color: #fff !important;
+}
+
+#hero #description {
+    color: #fff !important;
+}
+
+#hero #button {
+    background-color: #191D88 !important;
+}
+
+.card-title {
+    display: inline-block !important;
+}
+
+.custom-img {
+    width: 2em; 
+    height: 2em; 
+    margin: 0 !important;
+}
+
+@media (max-width: 767px) {
+
+    .navbar-nav .nav-item,
+    .nav-link {
+        margin: 0 !important;
+    }
+
+    .btn-daftar,
+    .btn-masuk {
+        text-align: left !important;
+        background-color: #1450A3 !important;
+        padding: 0 !important;
+        border: 0 !important;
+        margin: 0 !important;
+    }
+}
