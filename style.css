@@ -153,6 +153,11 @@
     color: #fff;
 }
 
+
+.text-light.text-center.py-3 {
+    background-color: #1450A3 !important;
+}
+
 @media (max-width: 767px) {
 
     .navbar-nav .nav-item,
