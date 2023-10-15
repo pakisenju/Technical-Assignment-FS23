@@ -5,14 +5,14 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     var username = document.getElementById('username').value;
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
-    var confirmpwd = document.getElementById('confirmpwd').value; // Tambahkan baris ini
+    var confirmpwd = document.getElementById('confirmpwd').value;
     
     if (!fullname || !username || !email || !password || !confirmpwd) {
       alert('Silakan isi semua kolom.');
       return;
     }
 
-    if (password !== confirmpwd) { // Tambahkan baris ini
+    if (password !== confirmpwd) {
       alert('Konfirmasi password tidak sesuai dengan password.');
       return;
     }

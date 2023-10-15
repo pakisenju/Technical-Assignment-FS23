@@ -17,6 +17,7 @@
             .col-md-9.mx-4 {
                 margin-left: 0 !important;
                 margin-right: 0 !important;
+                margin-top: 24px !important;
             }
 
             .col-md-2 button {
@@ -24,6 +25,23 @@
                 margin-left: 50px !important;
             }
 
+            #baca-web {
+                display: none;
+            }
+
+            #favorit-web {
+                display: none;
+            }
+        }
+
+        @media (min-width: 767px) {
+            #baca-mobile {
+                display: none;
+            }
+
+            #favorit-mobile {
+                display: none;
+            }
         }
         </style>
 </head>
@@ -67,9 +85,9 @@
         <div class="row">
             <div class="col-md-2" style="margin-top: 75px;">
                 <a href="koleksibuku.html"><i class='bx bxs-chevron-left-circle mb-4' style='color:#191d88; font-size: 32px'></i></a>
-                <a href="https://imgur.com/6rW46bj"><img src="https://i.imgur.com/6rW46bjm.jpg" title="source: imgur.com" class="img-fluid mb-3"/></a>
-                <button class="btn btn-primary mt-3 w-100">Baca Buku</button>
-                <button class="btn btn-success mt-3 w-100">Tambah ke Favorit</button>
+                <a href="https://imgur.com/8EEp5Xk"><img src="https://i.imgur.com/8EEp5Xkm.jpg" title="source: imgur.com" class="img-fluid mb-3" /></a>
+                <button class="btn btn-primary mt-3 w-100" id="baca-web">Baca Buku</button>
+                <button class="btn btn-success mt-3 w-100" id="favorit-web">Tambah ke Favorit</button>
             </div>
             <div class="col-md-9 mx-4" style="margin-top: 130px;">
                 <h3 class="mb-3" id="Judul"></h3>
@@ -79,9 +97,11 @@
                 <p class="mb-2 mx-3">Kategori <span id="Kategori" style="margin-left: 37px;">:  </span></p>
                 <hr>
                 <h3 class="mt-3">Sinopsis</h3>
-                <p class="mb-3" id="Sinopsis"></p>
-                <p class="mb-3" id="Sinopsis2"></p>
-                <p class="mb-5" id="Sinopsis3"></p>
+                <p class="mb-3 text-justify" id="Sinopsis"></p>
+                <p class="mb-3 text-justify" id="Sinopsis2"></p>
+                <p class="mb-5 text-justify" id="Sinopsis3"></p>
+                <button class="btn btn-primary mt-3 w-100" id="baca-mobile">Baca Buku</button>
+                <button class="btn btn-success mt-3 w-100" id="favorit-mobile">Tambah ke Favorit</button>
             </div>
         </div>
     </div>
@@ -100,7 +120,7 @@
         fetch('https://6524eba3ea560a22a4ea45bb.mockapi.io/books')
     .then(response => response.json())
     .then(data => {
-        const bookData = data[0]; 
+        const bookData = data[7]; 
         
         document.getElementById('Judul').innerHTML += ` ${bookData.Judul}`;
         document.getElementById('Bahasa').innerHTML += ` ${bookData.Bahasa}`;
