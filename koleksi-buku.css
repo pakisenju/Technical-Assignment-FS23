@@ -1,0 +1,107 @@
+#main {
+    max-width: 100vw;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#sidebar {
+    width: 15vw !important;
+    height: auto !important;
+    background-color: #1450A3 !important;
+    font-family: "Poppins", sans-serif !important;
+}
+
+#sidebar a {
+    color: #b0b0b0 !important;
+}
+
+#sidebar a:hover {
+    color: #fff !important;
+}
+
+#sidebar a.active {
+    color: #fff !important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: transparent !important;
+}
+
+#content {
+    width: auto;
+    margin: auto;
+}
+
+#search-section {
+    width: 100% !important;
+}
+
+#search-section input {
+    margin: 12px !important;
+    font-family: "Poppins", sans-serif !important;
+}
+
+#daftar-buku {
+    max-width: 70vw;
+    margin: 0 !important;
+    padding: 0 16px !important;
+}
+
+#footer-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+#footer-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    #avatar {
+        display: none;
+    }    
+
+    #sidebar {
+        width: 30vw !important;
+    }
+
+    #sidebar a {
+        padding: 12px 0 !important;
+        font-size: 12px;
+    }
+
+    #search-section {
+        width: 100% !important;
+    }
+
+    #search-section input {
+        font-family: "Poppins", sans-serif !important;
+    }
+
+    #daftar-buku {
+        display: flex;
+        flex-flow: row;
+        width: 100% !important;
+    }
+
+    #daftar-buku .row {
+        margin: 0 3px;
+    }
+
+    #footer-secondary {
+        width: 100% !important;
+        padding: 12px !important;
+    }
+}
+
+@media (min-width: 767px) {
+    #profile {
+        display: none;
+    }
+}
