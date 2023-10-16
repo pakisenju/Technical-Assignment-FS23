@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="homepage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geologica:wght@200&family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geologica:wght@200&family=Poppins:wght@200;400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Homepage</title>
 </head>
 
@@ -29,7 +34,7 @@
                         <a class="nav-link" href="#">Bacaan Harian</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link" href="#">Koleksi Buku</a>
+                        <a class="nav-link" href="koleksi-buku.html">Koleksi Buku</a>
                     </li>
                     <li class="nav-item mx-3">
                         <a class="nav-link" href="#">Favorit</a>
@@ -43,71 +48,90 @@
                 </ul>
                 <div class="navbar-nav ms-auto align-items-center" id="avatar">
                     <span class="me-1">Andi</span>
-                    <img src="https://i.imgur.com/SqHE1Ct.jpg" alt="Avatar" class="rounded-circle ms-2" width="50" height="50">
-                </div>                
+                    <div class="btn-group">
+                        <button type="button" class="btn" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://i.imgur.com/SqHE1Ct.jpg" alt="Avatar" class="rounded-circle" width="50" height="50">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-start" id="menu-list">
+                            <li ><a class="dropdown-item" href="index.html" >Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <section id="hero">
-                <div class="container col-xxl-12 px-4 py-5">
-                    <div class="row flex-lg-row align-items-center g-5 py-5">
-                        <div class="col-lg-8">
-                            <h1 class="display-6 fw-bold text-body-emphasis lh-1 mb-3" id="title">Koleksi Buku</h1>
-                            <p class="lead" id="description">Buku adalah teman setia yang tak pernah meninggalkan Anda. Ajaklah mereka bicara dan biarkan cerita-cerita mereka mengisi hidup Anda. Mulailah petualangan literasi anda disini!</p>
-                        </div>
-                        <div class="col-lg-4 text-lg-end">
-                            <img src="https://imgur.com/MW26D4w.png" class="d-block mx-lg-auto img-fluid"
-                                title="source: imgur.com" alt="Buku-Icon" width="500" height="438" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </section>
-          </div>
-          <div class="carousel-item">
-            <section id="hero">
-                <div class="container col-xxl-12 px-4 py-5">
-                    <div class="row flex-lg-row align-items-center g-5 py-5">
-                        <div class="col-lg-8">
-                            <h1 class="display-6 fw-bold text-body-emphasis lh-1 mb-3" id="title">Bacaan Harian</h1>
-                            <p class="lead" id="description">Membaca adalah alat paling ampuh untuk pertumbuhan diri. Membuat bacaan adalah cara untuk berbagi wawasan Anda dengan dunia. bergabunglah dalam perjalanan inspiratif ini!</p>
-                        </div>
-                        <div class="col-lg-4 text-lg-end">
-                            <img src="https://imgur.com/zagFW8Y.png" class="d-block mx-lg-auto img-fluid"
-                                title="source: imgur.com" alt="Bacaan-Icon" width="500" height="438" loading="lazy">
+            <div class="carousel-item active">
+                <section id="hero">
+                    <div class="container col-xxl-12 px-4 py-5">
+                        <div class="row flex-lg-row align-items-center g-5 py-5">
+                            <div class="col-lg-8">
+                                <h1 class="display-6 fw-bold text-body-emphasis lh-1 mb-3" id="title">Koleksi Buku</h1>
+                                <p class="lead" id="description">Buku adalah teman setia yang tak pernah meninggalkan
+                                    Anda. Ajaklah mereka bicara dan biarkan cerita-cerita mereka mengisi hidup Anda.
+                                    Mulailah petualangan literasi anda disini!</p>
+                            </div>
+                            <div class="col-lg-4 text-lg-end">
+                                <img src="https://imgur.com/MW26D4w.png" class="d-block mx-lg-auto img-fluid"
+                                    title="source: imgur.com" alt="Buku-Icon" width="500" height="438" loading="lazy">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-          </div>
-          <div class="carousel-item">
-            <section id="hero">
-                <div class="container col-xxl-12 px-4 py-5">
-                    <div class="row flex-lg-row align-items-center g-5 py-5">
-                        <div class="col-lg-8">
-                            <h1 class="display-6 fw-bold text-body-emphasis lh-1 mb-3" id="title">Workshop Online</h1>
-                            <p class="lead" id="description">Saat Anda menghadiri atau memimpin workshop, Anda mengubah diri sendiri dan dunia sekitar Anda. Mari bergabung dalam perjalanan inspiratif ini!</p>
-                        </div>
-                        <div class="col-lg-4 text-lg-end">
-                            <img src="https://imgur.com/TxpnxmF.png" class="d-block mx-lg-auto img-fluid"
-                                title="source: imgur.com" alt="Workshop-Icon" width="500" height="438" loading="lazy">
+                </section>
+            </div>
+            <div class="carousel-item">
+                <section id="hero">
+                    <div class="container col-xxl-12 px-4 py-5">
+                        <div class="row flex-lg-row align-items-center g-5 py-5">
+                            <div class="col-lg-8">
+                                <h1 class="display-6 fw-bold text-body-emphasis lh-1 mb-3" id="title">Bacaan Harian</h1>
+                                <p class="lead" id="description">Membaca adalah alat paling ampuh untuk pertumbuhan
+                                    diri. Membuat bacaan adalah cara untuk berbagi wawasan Anda dengan dunia.
+                                    bergabunglah dalam perjalanan inspiratif ini!</p>
+                            </div>
+                            <div class="col-lg-4 text-lg-end">
+                                <img src="https://imgur.com/zagFW8Y.png" class="d-block mx-lg-auto img-fluid"
+                                    title="source: imgur.com" alt="Bacaan-Icon" width="500" height="438" loading="lazy">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-          </div>
+                </section>
+            </div>
+            <div class="carousel-item">
+                <section id="hero">
+                    <div class="container col-xxl-12 px-4 py-5">
+                        <div class="row flex-lg-row align-items-center g-5 py-5">
+                            <div class="col-lg-8">
+                                <h1 class="display-6 fw-bold text-body-emphasis lh-1 mb-3" id="title">Workshop Online
+                                </h1>
+                                <p class="lead" id="description">Saat Anda menghadiri atau memimpin workshop, Anda
+                                    mengubah diri sendiri dan dunia sekitar Anda. Mari bergabung dalam perjalanan
+                                    inspiratif ini!</p>
+                            </div>
+                            <div class="col-lg-4 text-lg-end">
+                                <img src="https://imgur.com/TxpnxmF.png" class="d-block mx-lg-auto img-fluid"
+                                    title="source: imgur.com" alt="Workshop-Icon" width="500" height="438"
+                                    loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
-      </div>
-      
-      <a class="d-grid gap-2 d-md-flex justify-content-md-center mt-4 baca-button" href="koleksi-buku.html"><button type="button" id="button-membaca" class="btn btn-primary btn-lg px-4 me-md-2">Mulai Membaca</button></a>
+    </div>
+
+    <a class="d-grid gap-2 d-md-flex justify-content-md-center mt-4 baca-button" href="koleksi-buku.html"><button
+            type="button" id="button-membaca" class="btn btn-primary btn-lg px-4 me-md-2">Mulai Membaca</button></a>
 
     <section id="recommend-books">
         <div class="container">
@@ -120,7 +144,8 @@
             <div class="row d-flex justify-content-between">
                 <div class="col-md-2">
                     <div class="card border-0">
-                        <a href="ebook1.html"><img src="https://imgur.com/SDeGGJu.jpg" title="source: imgur.com" class="card-img-top" alt="Dilan 1990" /></a>
+                        <a href="ebook1.html"><img src="https://imgur.com/SDeGGJu.jpg" title="source: imgur.com"
+                                class="card-img-top" alt="Dilan 1990" /></a>
                         <div class="card-body" id="card-body">
                             <h5 class="card-title">Dilan 1990</h5>
                             <p class="card-text">by <a href="">Pidi Baiq</a> * 350x dibaca</p>
@@ -130,7 +155,8 @@
 
                 <div class="col-md-2">
                     <div class="card border-0">
-                        <a href="ebook2.html"><img src="https://imgur.com/T1yvKAY.jpg" title="source: imgur.com" class="card-img-top" alt="Laskar Pelangi" /></a>
+                        <a href="ebook2.html"><img src="https://imgur.com/T1yvKAY.jpg" title="source: imgur.com"
+                                class="card-img-top" alt="Laskar Pelangi" /></a>
                         <div class="card-body" id="card-body">
                             <h5 class="card-title">Laskar Pelangi</h5>
                             <p class="card-text">by <a href="">Andrea Hinata</a> * 105x dibaca</p>
@@ -140,7 +166,8 @@
 
                 <div class="col-md-2">
                     <div class="card border-0">
-                        <a href="ebook8.html"><img src="https://imgur.com/XzWNP6H.jpg" title="source: imgur.com" class="card-img-top" alt="Perahu Kertas" /></a>
+                        <a href="ebook8.html"><img src="https://imgur.com/XzWNP6H.jpg" title="source: imgur.com"
+                                class="card-img-top" alt="Perahu Kertas" /></a>
                         <div class="card-body" id="card-body">
                             <h5 class="card-title">Perahu Kertas</h5>
                             <p class="card-text">by <a href="">Dewi Lestari</a> * 315x dibaca</p>
@@ -150,7 +177,8 @@
 
                 <div class="col-md-2">
                     <div class="card border-0">
-                        <a href="ebook10.html"><img src="https://imgur.com/pTmBWA3.jpg" title="source: imgur.com" class="card-img-top" alt="Laut Bercerita" /></a>
+                        <a href="ebook10.html"><img src="https://imgur.com/pTmBWA3.jpg" title="source: imgur.com"
+                                class="card-img-top" alt="Laut Bercerita" /></a>
                         <div class="card-body" id="card-body">
                             <h5 class="card-title">Laut Bercerita</h5>
                             <p class="card-text">by <a href="">Leila S. Chudori</a> * 97x dibaca</p>
@@ -160,7 +188,8 @@
 
                 <div class="col-md-2">
                     <div class="card border-0">
-                        <a href="ebook9.html"><img src="https://imgur.com/Bo9dgaD.jpg" title="source: imgur.com" class="card-img-top" alt="Sang Pemimpi" /></a>
+                        <a href="ebook9.html"><img src="https://imgur.com/Bo9dgaD.jpg" title="source: imgur.com"
+                                class="card-img-top" alt="Sang Pemimpi" /></a>
                         <div class="card-body" id="card-body">
                             <h5 class="card-title">Sang Pemimpi</h5>
                             <p class="card-text">by <a href="">Andrea Hinata</a> * 357x dibaca</p>
@@ -177,60 +206,72 @@
                 <h1>Event Yang Tersedia</h1>
             </div>
         </div>
-        
+
         <div class="container mt-3">
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="card mb-3 event-kami" style="max-width: 330px;">
                     <a href="#" class="klik-event">
                         <div class="row g-0">
                             <div class="col-md-6">
-                                <img src="https://imgur.com/GCYoctz.jpg" class="card-img img-fluid rounded-start" alt="...">
+                                <img src="https://imgur.com/GCYoctz.jpg" class="card-img img-fluid rounded-start"
+                                    alt="...">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body">
                                     <p class="judul-event">Seminar</p>
                                     <h6 class="title-event">Detail Event</h6>
-                                    <h6 class="detail-event"> <img class="icon" src="https://imgur.com/Cu0Rndu.png" alt=""> 30 September 2023</h6>
-                                    <h6 class="detail-event"> <img class="icon" src="https://imgur.com/hiMNAfB.png" alt=""> 19:00 - 21:30 WIB</h6>
-                                    <h6 class="detail-event"> <img class="icon" src="https://imgur.com/askhKUh.png" alt=""> Zoom Meeting</h6>
+                                    <h6 class="detail-event"> <img class="icon" src="https://imgur.com/Cu0Rndu.png"
+                                            alt=""> 30 September 2023</h6>
+                                    <h6 class="detail-event"> <img class="icon" src="https://imgur.com/hiMNAfB.png"
+                                            alt=""> 19:00 - 21:30 WIB</h6>
+                                    <h6 class="detail-event"> <img class="icon" src="https://imgur.com/askhKUh.png"
+                                            alt=""> Zoom Meeting</h6>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-            
+
                 <div class="card mb-3 event-kami" style="max-width: 330px;">
                     <a href="#" class="klik-event">
                         <div class="row g-0">
                             <div class="col-md-6">
-                                <img src="https://imgur.com/mS0m5h3.jpg" class="card-img img-fluid rounded-start" alt="...">
+                                <img src="https://imgur.com/mS0m5h3.jpg" class="card-img img-fluid rounded-start"
+                                    alt="...">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body">
                                     <p class="judul-event">Workshop</p>
                                     <h6 class="title-event">Detail Event</h6>
-                                    <h6 class="detail-event"> <img class="icon" src="https://imgur.com/Cu0Rndu.png" alt=""> 10 November 2023</h6>
-                                    <h6 class="detail-event"> <img class="icon" src="https://imgur.com/hiMNAfB.png" alt=""> 13:00 - 17:00 WIB</h6>
-                                    <h6 class="detail-event"> <img class="icon" src="https://imgur.com/askhKUh.png" alt=""> Zoom Meeting</h6>
+                                    <h6 class="detail-event"> <img class="icon" src="https://imgur.com/Cu0Rndu.png"
+                                            alt=""> 10 November 2023</h6>
+                                    <h6 class="detail-event"> <img class="icon" src="https://imgur.com/hiMNAfB.png"
+                                            alt=""> 13:00 - 17:00 WIB</h6>
+                                    <h6 class="detail-event"> <img class="icon" src="https://imgur.com/askhKUh.png"
+                                            alt=""> Zoom Meeting</h6>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-            
+
                 <div class="card mb-3 event-kami" style="max-width: 340px;">
                     <a href="#" class="klik-event">
                         <div class="row g-0">
                             <div class="col-md-6">
-                                <img src="https://imgur.com/pQK9pnZ.jpg" class="card-img img-fluid rounded-start" alt="...">
+                                <img src="https://imgur.com/pQK9pnZ.jpg" class="card-img img-fluid rounded-start"
+                                    alt="...">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body">
                                     <p class="judul-event">Workshop</p>
                                     <h6 class="title-event">Detail Event</h6>
-                                    <h6 class="detail-event"> <img class="icon" src="https://imgur.com/Cu0Rndu.png" alt=""> 15 Desember 2023</h6>
-                                    <h6 class="detail-event"> <img class="icon" src="https://imgur.com/hiMNAfB.png" alt=""> 10:00 - 12:00 WIB</h6>
-                                    <h6 class="detail-event"> <img class="icon" src="https://imgur.com/askhKUh.png" alt=""> Zoom Meeting</h6>
+                                    <h6 class="detail-event"> <img class="icon" src="https://imgur.com/Cu0Rndu.png"
+                                            alt=""> 15 Desember 2023</h6>
+                                    <h6 class="detail-event"> <img class="icon" src="https://imgur.com/hiMNAfB.png"
+                                            alt=""> 10:00 - 12:00 WIB</h6>
+                                    <h6 class="detail-event"> <img class="icon" src="https://imgur.com/askhKUh.png"
+                                            alt=""> Zoom Meeting</h6>
                                 </div>
                             </div>
                         </div>
@@ -248,7 +289,8 @@
         <div class="container col-xxl-12 px-4 py-5">
             <div class="row d-flex justify-content-between">
                 <div id="isi-quotes">
-                    <p>Literasi bukan hanya tentang membaca, tetapi juga tentang memahami, menganalisis, dan menginterpretasikan informasi, <br>
+                    <p>Literasi bukan hanya tentang membaca, tetapi juga tentang memahami, menganalisis, dan
+                        menginterpretasikan informasi, <br>
                         mari bersama-sama membuka jendela ini untuk memperluas cakrawala pengetahuan</p>
                 </div>
             </div>
@@ -259,8 +301,12 @@
         <p id="footer-text">© KM 5 FS-23 | Powered by Skilvul</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
