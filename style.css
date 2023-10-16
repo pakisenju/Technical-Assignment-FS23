@@ -24,6 +24,12 @@
     color: #fff !important;
 }
 
+#menu-list {
+    width: 100% !important;
+    right: 0 !important;
+    left: auto !important;
+}
+
 #hero {
     background-color: #337CCF !important;
 }
