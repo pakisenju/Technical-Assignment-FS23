@@ -1,0 +1,219 @@
+.navbar {
+    background-color: rgba(20, 80, 163, 1.0) !important;
+    font-family: "Poppins", sans-serif !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+}
+
+.navbar-brand {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 900 !important;
+}
+
+#hero {
+    background-color: #337CCF !important;
+}
+
+#hero #title {
+    font-family: "Poppins", sans-serif !important;
+    color: #fff !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+}
+
+#hero #description {
+    font-family: "Poppins", sans-serif !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+}
+
+#button-membaca {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-weight: 400;
+    background-color: #191D88;
+}
+
+.baca-button {
+    text-decoration: none;
+}
+
+.card-title {
+    display: inline-block !important;
+    font-family: "Poppins", sans-serif !important;
+    color: #337CCF !important;
+    font-weight: 600 !important;
+}
+
+.card-text {
+    font-family: "Poppins", sans-serif !important;
+    text-align: justify !important;
+}
+
+#recommend-books-title, #workshop-title {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2em;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+#recommend-books-title h1, #workshop-title h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+}
+
+#card-body {
+    padding: 0;
+    margin-top: 1em;
+}
+
+.detail-event{
+    font-size: 11px;
+}
+
+.judul-event {
+    text-align: center;
+    border-radius: 2px;
+    font-size: small;
+    width: 60%;
+    background-color: #c6c6c6;
+}
+
+.title-event {
+    margin-top: 2em;
+}
+
+.event-kami {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.klik-event {
+    text-decoration: none;
+    color: #000000;
+}
+
+.icon {
+    width: 12%;
+    height: 12%;
+    margin-top: -0.1em;
+}
+
+.card-text a {
+    text-decoration: none;
+}
+
+.card-img-top {
+    width: 13vw !important;
+    height: 40vh !important;
+    transition: transform 0.4s, border-radius 0.4s;
+}
+
+.card-img-top:hover {
+    transform: scale(1.03);
+}
+
+#quotes {
+    background-color: #1450A3;
+    margin-top: 2em;
+}
+
+#quotes-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+#quotes-title h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+}
+
+#isi-quotes {
+    padding-bottom: 2em;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+#isi-quotes p {
+    text-align: center;
+}
+
+#card-title {
+    color: #fff !important;
+}
+
+#footer {
+    background-color: #1450A3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer #footer-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+@media (max-width: 1024px){
+    .card-img-top {
+        width: 13vw !important;
+        height: 18vw !important;
+        transition: transform 0.4s, border-radius 0.4s;
+    }
+    
+    .card-img-top:hover {
+        transform: scale(1.03);
+    }
+}
+
+@media (max-width: 767px) {
+
+    .navbar-nav .nav-item,
+    .nav-link {
+        margin: 0 !important;
+    }
+
+    .card img {
+        margin-top: 1.75em !important;
+    }
+
+    .card-img-top {
+        width: 100% !important;
+        height: 100% !important;
+        transition: transform 0.4s, border-radius 0.4s;
+    }
+    
+    .card-img-top:hover {
+        transform: scale(1.03);
+    }
+
+    .judul-event {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .title-event{
+        margin-bottom: 2em;
+    }
+
+    .detail-event {
+        margin-top: -3em;
+    }
+
+    .icon {
+        width: 5%;
+        height: 5%;
+        margin-bottom: 1.7em;
+    }
+}
