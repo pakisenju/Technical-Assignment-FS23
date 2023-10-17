@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baca Buku</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="bacaEbook.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-5" href="#">BABAYO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" aria-current="page" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Bacaan Harian</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" href="koleksi-buku.html">Koleksi Buku</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Favorit</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Workshop</a>
+                    </li>
+                    <li class="nav-item mx-3" id="profile">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav ms-auto align-items-center" id="avatar">
+                    <span class="me-1">Andi</span>
+                    <div class="btn-group">
+                        <button type="button" class="btn" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img src="https://i.imgur.com/SqHE1Ct.jpg" alt="Avatar" class="rounded-circle" width="25"
+                                height="25">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-start" id="menu-list">
+                            <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+     <div class="container">
+        <div class="row">
+            <div class="col-md-6 buku">
+                <h5 id="judul-buku">Sang Pemimpi</h5>
+                <p id="tahun-buku">2006</p>
+            </div>
+            <div class="col-md-6 reading-time">
+                <div id="reading-time-top">Waktu Membaca</div>
+                <br>
+                <div id="reading-time-bottom">00:00:00</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <iframe id="book-iframe" src="https://drive.google.com/file/d/157SLGc9eIFtsQrQOXO0RNS0foANB0qNo/preview"></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a class="selesai-baca-button" href="koleksi-buku.html"><button type="button" id="selesai-membaca" class="btn btn-primary mt-3">Selesai Membaca</button></a>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p id="footer-text">© KM 5 FS-23 | Powered by Skilvul</p>
+    </footer>
+    
+    <script>
+    let startTime = new Date();
+    setInterval(updateReadingTime, 1000);
+    function updateReadingTime() {
+        let currentTime = new Date();
+        let timeDiff = Math.floor((currentTime - startTime) / 1000);
+        let seconds = timeDiff % 60;
+        let minutes = Math.floor(timeDiff / 60) % 60;
+        let hours = Math.floor(timeDiff / 3600);
+        
+        let timeStr = padZero(hours) + ":" + padZero(minutes) + ":" + padZero(seconds);
+        document.getElementById('reading-time-bottom').textContent = timeStr;
+        }
+        function padZero(num) {
+            return num.toString().padStart(2, '0');
+        }
+        document.getElementById('selesai-membaca').addEventListener('click', function() {
+            alert('Selamat! Anda telah menyelesaikan membaca buku.');
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
