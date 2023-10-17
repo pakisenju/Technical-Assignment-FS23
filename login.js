@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
           const pengguna = data.find(pengguna => pengguna.username === username && pengguna.password === password);
           if (pengguna) {
             alert('Login berhasil!');
-            window.location.href = 'index.html';
+            window.location.href = 'homepage.html';
           } else {
             alert('Username atau password salah. Silakan coba lagi.');
           }
