@@ -45,7 +45,7 @@
 }
 
 #daftar-buku {
-    max-width: 70vw;
+    width: 70vw;
     margin: 0 !important;
     padding: 0 16px !important;
 }
@@ -100,10 +100,28 @@
         width: 100% !important;
         padding: 12px !important;
     }
+
+    #sidebar {
+        display: none !important;
+    }
+
+    #filter-mobile {
+        display: flex !important;
+        justify-content: space-between !important;
+    }
+
+    #daftar-buku {
+        display: flex !important;
+        justify-content: space-between !important;
+    }
 }
 
 @media (min-width: 767px) {
     #profile {
         display: none;
+    }
+
+    #filter-mobile {
+        display: none !important;
     }
 }
