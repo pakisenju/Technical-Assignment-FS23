@@ -184,3 +184,35 @@
         margin-top: 1.75em !important;
     }
 }
+
+@media (max-width: 767px) {
+
+    .col-md-9.mx-4 {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-top: 24px !important;
+    }
+
+    .col-md-2 button {
+        width: 50% !important;
+        margin-left: 50px !important;
+    }
+
+    #baca-web {
+        display: none;
+    }
+
+    #favorit-web {
+        display: none;
+    }
+}
+
+@media (min-width: 767px) {
+    #baca-mobile {
+        display: none;
+    }
+
+    #favorit-mobile {
+        display: none;
+    }
+}
