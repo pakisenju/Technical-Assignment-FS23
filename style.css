@@ -186,6 +186,9 @@
 }
 
 @media (max-width: 767px) {
+    #avatar {
+        display: none;
+    } 
 
     .col-md-9.mx-4 {
         margin-left: 0 !important;
@@ -208,6 +211,10 @@
 }
 
 @media (min-width: 767px) {
+    #profile {
+        display: none;
+    }
+
     #baca-mobile {
         display: none;
     }

@@ -1,31 +1,33 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const apiUrl = 'https://652f88b10b8d8ddac0b2a08b.mockapi.io/Users';
+const loginForm = document.getElementById("loginForm");
 
-    function cobaLogin(username, password) {
-      fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => {
-          const pengguna = data.find(pengguna => pengguna.username === username && pengguna.password === password);
-          if (pengguna) {
-            alert('Login berhasil!');
-            window.location.href = 'homepage.html';
-          } else {
-            alert('Username atau password salah. Silakan coba lagi.');
-          }
-        })
-        .catch(error => console.error('Error:', error));
-    }
+loginForm.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
-      event.preventDefault();
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
 
-      const username = document.getElementById('username').value;
-      const password = document.getElementById('password').value;
-
-      if (username && password) {
-        cobaLogin(username, password);
-      } else {
-        alert('Silakan masukkan username dan password.');
+  fetch("https://652f88b10b8d8ddac0b2a08b.mockapi.io/Users", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ username, password }),
+  })
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
       }
+      throw new Error("Gagal melakukan login.");
+    })
+    .then((data) => {
+      localStorage.setItem("userId", data.id);
+      localStorage.setItem("token", data.token);
+      alert("Login berhasil.");
+      window.location.href = "homepage.html";
+    })
+    .catch((error) => {
+      console.error("Error:", error);
     });
-  });
+});
+
+const token = localStorage.getItem("token");
