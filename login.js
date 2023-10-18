@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const apiUrl = 'https://6524eba3ea560a22a4ea45bb.mockapi.io/users';
+    const apiUrl = 'https://652f88b10b8d8ddac0b2a08b.mockapi.io/Users';
 
     function cobaLogin(username, password) {
       fetch(apiUrl)

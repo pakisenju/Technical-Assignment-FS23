@@ -24,7 +24,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         password: password
     };
   
-    fetch('https://6524eba3ea560a22a4ea45bb.mockapi.io/users', {
+    fetch('https://652f88b10b8d8ddac0b2a08b.mockapi.io/Users', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
