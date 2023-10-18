@@ -121,7 +121,7 @@
             let readingTimeStr = padZero(Math.floor(readingTimeInSeconds / 3600)) + ":" + padZero(Math.floor(readingTimeInSeconds / 60) % 60) + ":" + padZero(readingTimeInSeconds % 60);
     
             let modalBody = document.querySelector('.modal-body');
-            modalBody.innerHTML = `Anda membaca selama ${readingTimeStr} waktus, dan mendapatkan ${totalPoints} point.`;
+            modalBody.innerHTML = `Anda membaca selama ${readingTimeStr} waktu, dan mendapatkan ${totalPoints} point.`;
     
             let myModal = new bootstrap.Modal(document.getElementById('myModal'));
             myModal.show();

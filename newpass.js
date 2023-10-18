@@ -8,7 +8,7 @@ document.getElementById('resetPasswordForm').addEventListener('submit', function
         return;
     }
 
-    var URL_API = 'https://6524eba3ea560a22a4ea45bb.mockapi.io/users';
+    var URL_API = 'https://652f88b10b8d8ddac0b2a08b.mockapi.io/Users';
 
     var email = new URLSearchParams(window.location.search).get('email');
 
