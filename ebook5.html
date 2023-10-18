@@ -55,7 +55,7 @@
                                 height="25">
                         </button>
                         <ul class="dropdown-menu dropdown-menu-start" id="menu-list">
-                            <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                            <li><a class="dropdown-item" id="logout-button" href="index.html">Logout</a></li>
                         </ul>
                     </div>
                 </div>
@@ -105,6 +105,21 @@
         crossorigin="anonymous"></script>
 
     <script>
+        const token = localStorage.getItem('token');
+
+        if (!token) {
+            alert("Silakan lakukan login terlebih dahulu.");
+            window.location.href = 'login.html';
+        }
+
+        const logoutButton = document.getElementById('logout-button');
+
+        logoutButton.addEventListener('click', function () {
+            localStorage.removeItem('token');
+            alert("Anda telah logout")
+            window.location.href = 'login.html';
+        });
+
         fetch('https://652f88b10b8d8ddac0b2a08b.mockapi.io/books')
             .then(response => response.json())
             .then(data => {
