@@ -7,27 +7,28 @@ loginForm.addEventListener("submit", function (event) {
   const password = document.getElementById("password").value;
 
   fetch("https://652f88b10b8d8ddac0b2a08b.mockapi.io/Users", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ username, password }),
+    method: "GET",
   })
     .then((response) => {
       if (response.ok) {
         return response.json();
       }
-      throw new Error("Gagal melakukan login.");
+      throw new Error("Gagal mengambil data pengguna.");
     })
-    .then((data) => {
-      localStorage.setItem("userId", data.id);
-      localStorage.setItem("token", data.token);
-      alert("Login berhasil.");
-      window.location.href = "homepage.html";
+    .then((users) => {
+      const user = users.find(
+        (user) => user.username === username && user.password === password
+      );
+      if (user) {
+        localStorage.setItem("userId", user.id);
+        localStorage.setItem("token", user.token);
+        alert("Login berhasil.");
+        window.location.href = "homepage.html";
+      } else {
+        alert("Nama pengguna atau kata sandi salah.");
+      }
     })
     .catch((error) => {
       console.error("Error:", error);
     });
 });
-
-const token = localStorage.getItem("token");
