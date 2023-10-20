@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="koleksi-buku.css">
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geologica:wght@200&family=Poppins:wght@200;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- family icons -->
+    <script src="https://kit.fontawesome.com/2f34e5dbd9.js" crossorigin="anonymous"></script>
+
+    <title>Babayo - Koleksi Buku</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-5" href="#">BABAYO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" aria-current="page" href="homepage.html">Beranda</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Bacaan Harian</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" href="koleksi-buku.html">Koleksi Buku</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Favorit</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Workshop</a>
+                    </li>
+                    <li class="nav-item mx-3" id="profile">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav ms-auto align-items-center" id="avatar">
+                    <span class="me-1" id="nama-user"></span>
+                    <div class="btn-group">
+                        <button type="button" class="btn" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img src="https://i.imgur.com/SqHE1Ct.jpg" alt="Avatar" class="rounded-circle" width="25"
+                                height="25">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-start" id="menu-list">
+                            <li><a class="dropdown-item" id="logout-button" href="index.html">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="main">
+        <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" id="sidebar">
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">Semua</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link link-body-emphasis">Fiksi</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link link-body-emphasis">Pendidikan</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link link-body-emphasis">Sejarah</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link link-body-emphasis">Teknologi</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <div class="container mt-5" id="filter-mobile">
+                <button class="btn btn-primary mr-2 filter-btn" data-filter="all">All</button>
+                <button class="btn btn-primary mr-2 filter-btn" data-filter="category1">Fiksi</button>
+                <button class="btn btn-primary mr-2 filter-btn" data-filter="category2">Pendidikan</button>
+                <button class="btn btn-primary filter-btn" data-filter="category3">Sejarah</button>
+                <button class="btn btn-primary filter-btn" data-filter="category3">Teknologi</button>
+            </div>
+
+            <div class="input-group mb-3" id="search-section">
+                <input type="search" id="form1" class="form-control" placeholder="Cari Buku">
+            </div>
+
+            <div class="container mt-5" id="daftar-buku">
+                <div class="row d-flex justify-content-between mb-3">
+                    <div class="col-md-2">
+                        <div class="card border-0">
+                            <a href="ebook1.html"><img src="https://imgur.com/SDeGGJu.jpg" title="source: imgur.com"
+                                    class="card-img-top" alt="Dilan 1990" /></a>
+                            <div class="card-body" id="card-body">
+                                <h5 class="card-title">Dilan 1990</h5>
+                                <p class="card-text">by <a href="">Pidi Baiq</a> * 350x dibaca</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card border-0">
+                            <a href="ebook2.html"><img src="https://i.imgur.com/gzVaE2g.png" title="source: imgur.com"
+                                    class="card-img-top" alt="laskar pelangi" /></a>
+                            <div class="card-body" id="card-body">
+                                <h5 class="card-title">Laskar Pelangi</h5>
+                                <p class="card-text">by <a href="">Andrea Hinata</a> * 105x dibaca</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card border-0">
+                            <a href="ebook3.html"><img src="https://i.imgur.com/vlVWJ99m.jpg" title="source: imgur.com"
+                                    class="card-img-top" alt="ayat cinta" /></a>
+                            <div class="card-body" id="card-body">
+                                <h5 class="card-title">Ayat Ayat Cinta</h5>
+                                <p class="card-text">by <a href="">Hadi Susanto</a> * 125x dibaca</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card border-0">
+                            <a href="ebook4.html"><img src="https://i.imgur.com/FeSZ0rfm.jpg" title="source: imgur.com"
+                                    class="card-img-top" alt="bumi manusia" /></a>
+                            <div class="card-body" id="card-body">
+                                <h5 class="card-title">Bumi Manusia</h5>
+                                <p class="card-text">by <a href="">Pramudya Ananta Toer</a> * 92x dibaca</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card border-0">
+                            <a href="ebook5.html"><img src="https://i.imgur.com/06Lkecim.jpg" title="source: imgur.com"
+                                    class="card-img-top" alt="cinderella" /></a>
+                            <div class="card-body" id="card-body">
+                                <h5 class="card-title">Cinderella Tanpa Sepatu Kaca</h5>
+                                <p class="card-text">by <a href="">Indah Hanaco</a> * 102x dibaca</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-between mb-3">
+                    <div class="col-md-2">
+                        <div class="card border-0">
+                            <a href="ebook6.html"><img src="https://i.imgur.com/zWiOo7Km.jpg" title="source: imgur.com"
+                                    class="card-img-top" alt="daun yang jatuh tak pernah membenci angin" /></a>
+                            <div class="card-body" id="card-body">
+                                <h5 class="card-title">Daun Yang Jatuh Tak Pernah Membenci Angin</h5>
+                                <p class="card-text">by <a href="">Tere Liye</a> * 113x dibaca</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card border-0">
+                            <a href="ebook7.html"><img src="https://i.imgur.com/zUvaErQm.jpg" title="source: imgur.com"
+                                    class="card-img-top" alt="detik detik yang menentukan" /></a>
+                            <div class="card-body" id="card-body">
+                                <h5 class="card-title">Detik-Detik Yang Menentukan</h5>
+                                <p class="card-text">by <a href="">Bacharuddin Jusuf Habibie</a> * 105x dibaca</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card border-0">
+                            <a href="ebook8.html"><img src="https://imgur.com/XzWNP6H.jpg" title="source: imgur.com"
+                                    class="card-img-top" alt="Perahu Kertas" /></a>
+                            <div class="card-body" id="card-body">
+                                <h5 class="card-title">Perahu Kertas</h5>
+                                <p class="card-text">by <a href="">Dewi Lestari</a> * 315x dibaca</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card border-0">
+                            <a href="ebook9.html"><img src="https://imgur.com/Bo9dgaD.jpg" title="source: imgur.com"
+                                    class="card-img-top" alt="Sang Pemimpi" /></a>
+                            <div class="card-body" id="card-body">
+                                <h5 class="card-title">Sang Pemimpi</h5>
+                                <p class="card-text">by <a href="">Andrea Hinata</a> * 357x dibaca</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card border-0">
+                            <a href="ebook10.html"><img src="https://imgur.com/pTmBWA3.jpg" title="source: imgur.com"
+                                    class="card-img-top" alt="Laut Bercerita" /></a>
+                            <div class="card-body" id="card-body">
+                                <h5 class="card-title">Laut Bercerita</h5>
+                                <p class="card-text">by <a href="">Leila S. Chudori</a> * 97x dibaca</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5" id="footer-secondary">
+                <p id="footer-text">© KM 5 FS-23 | Powered by Skilvul</p>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        const token = localStorage.getItem('token');
+
+        if (!token) {
+            alert("Silakan lakukan login terlebih dahulu.");
+            window.location.href = 'login.html';
+        }
+
+        const logoutButton = document.getElementById('logout-button');
+
+        logoutButton.addEventListener('click', function () {
+            localStorage.removeItem('token');
+            alert("Anda telah logout")
+            window.location.href = 'login.html';
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const userId = localStorage.getItem("userId");
+
+            if (userId) {
+                fetch(`https://652f88b10b8d8ddac0b2a08b.mockapi.io/Users/${userId}`)
+                    .then((response) => {
+                        if (response.ok) {
+                            return response.json();
+                        }
+                        throw new Error("Gagal mengambil data pengguna.");
+                    })
+                    .then((data) => {
+                        const usernameSpan = document.getElementById("nama-user");
+                        usernameSpan.innerText = data.username;
+                    })
+                    .catch((error) => {
+                        console.error("Error:", error);
+                        window.location.href = "login.html";
+                    });
+            } else {
+                window.location.href = "login.html";
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

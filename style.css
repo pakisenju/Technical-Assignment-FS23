@@ -1,0 +1,225 @@
+.navbar {
+    background-color: rgba(20, 80, 163, 1.0) !important;
+    font-family: "Poppins", sans-serif !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+}
+
+.navbar-brand {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 900 !important;
+}
+
+.btn-masuk {
+    background-color: #191D88 !important;
+    font-family: "Poppins", sans-serif !important;
+    color: #fff !important;
+    font-weight: 400;
+}
+
+.btn-daftar {
+    font-family: "Poppins", sans-serif !important;
+    color: #fff !important;
+    font-weight: 400;
+    color: #fff !important;
+}
+
+#menu-list {
+    width: 100% !important;
+    right: 0 !important;
+    left: auto !important;
+}
+
+#hero {
+    background-color: #337CCF !important;
+}
+
+#hero #title {
+    font-family: "Poppins", sans-serif !important;
+    color: #fff !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+}
+
+#hero #description {
+    font-family: "Poppins", sans-serif !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+}
+
+#hero #button {
+    font-family: "Poppins", sans-serif !important;
+    color: #fff !important;
+    font-weight: 400;
+    background-color: #191D88 !important;
+}
+
+#product-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+#product-title h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card-title {
+    display: inline-block !important;
+    font-family: "Poppins", sans-serif !important;
+    color: #337CCF !important;
+    font-weight: 600 !important;
+}
+
+.custom-img {
+    width: 1.5em; 
+    height: 1.5em; 
+    margin: 0 !important;
+}
+
+.card-text {
+    font-family: "Poppins", sans-serif !important;
+    text-align: justify !important;
+}
+
+#recommend-books-title {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2em;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+#recommend-books-title h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+}
+
+#card-body {
+    padding: 0;
+    margin-top: 1em;
+}
+
+.card-text a {
+    text-decoration: none;
+}
+
+.card-img-top {
+    transition: transform 0.4s, border-radius 0.4s;
+}
+
+.card-img-top:hover {
+    transform: scale(1.03);
+}
+
+#our-team {
+    background-color: #1450A3;
+    margin-top: 2em;
+}
+
+#team-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+#team-title h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+}
+
+#team-card {
+    background-color: #337CCF;
+}
+
+#card-title {
+    color: #fff !important;
+}
+
+#footer {
+    background-color: #1450A3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer #footer-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+.text-light.text-center.py-3 {
+    background-color: #1450A3 !important;
+}
+
+@media (max-width: 767px) {
+
+    .navbar-nav .nav-item,
+    .nav-link {
+        margin: 0 !important;
+    }
+
+    .btn-daftar,
+    .btn-masuk {
+        text-align: left !important;
+        background-color: #1450A3 !important;
+        padding: 0 !important;
+        border: 0 !important;
+        margin: 0 !important;
+    }
+
+    .card img {
+        margin-top: 1.75em !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #avatar {
+        display: none;
+    } 
+
+    .col-md-9.mx-4 {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-top: 24px !important;
+    }
+
+    .col-md-2 button {
+        width: 50% !important;
+        margin-left: 50px !important;
+    }
+
+    #baca-web {
+        display: none;
+    }
+
+    #favorit-web {
+        display: none;
+    }
+}
+
+@media (min-width: 767px) {
+    #profile {
+        display: none;
+    }
+
+    #baca-mobile {
+        display: none;
+    }
+
+    #favorit-mobile {
+        display: none;
+    }
+}
